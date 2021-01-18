@@ -9,7 +9,7 @@ def on_connect(client, userdata, flags, rc):
 
 def on_message(client, userdata, msg):
 	print(str(msg.payload) + "XDDDDD")
-	if str(msg.payload) == "b'0'":
+	if str(msg.payload) == "b'1'":
 		print("ON")
 		gpio.set(504, 1)
 	else:
